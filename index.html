@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Tareas</title>
+    <style src="./style.css"></style>
+</head>
+
+<body>
+    <header>Lista de tareas</header>
+    <main>
+        <label for="nuevaTarea"></label>
+        <input type="text" placeholder="Nueva tarea" id="nuevaTarea" name="nuevaTarea">
+        <button type="submit">Añadir tareas</button>
+        <button type="submit">Borrar tareas</button>
+
+
+        <button>Listar tareas</button>
+        <button>Ordenar Tareas</button>
+
+        <div class="modal-ext hide">
+            <div class="modal-int">
+                <h2>¿Estás segurx?</h2>
+                <div>
+                    <button>Aceptar</button>
+                    <button>Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
