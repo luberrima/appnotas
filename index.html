@@ -6,26 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Tareas</title>
     <style src="./style.css"></style>
+
 </head>
 
 <body>
     <header>Lista de tareas</header>
     <main>
-        <label for="nuevaTarea"></label>
-        <input type="text" placeholder="Nueva tarea" id="nuevaTarea" name="nuevaTarea">
-        <button type="submit">Añadir tareas</button>
-        <button type="submit">Borrar tareas</button>
+        <form name="formTarea">
+            <label for="nuevaTarea">Añade una tarea nueva</label>
+            <input type="text" placeholder="Nueva tarea" id="nuevaTarea" name="nuevaTarea">
+            <button for="nuevaTarea" type="submit">Añadir</button>
+        </form>
 
 
-        <button>Listar tareas</button>
-        <button>Ordenar Tareas</button>
+        <div>
+            <button type="submit" id="añadirTarea">Añadir tareas</button>
+            <button type="submit" id="borrarTarea">Borrar tareas</button>
+            <button id="listarTarea">Listar tareas</button>
+            <button id="ordenarTarea">Ordenar Tareas</button>
+        </div>
 
         <div class="modal-ext hide">
             <div class="modal-int">
                 <h2>¿Estás segurx?</h2>
                 <div>
-                    <button>Aceptar</button>
-                    <button>Cancelar</button>
+                    <button id="btnAceptar">Aceptar</button>
+                    <button id="btnCancelar">Cancelar</button>
                 </div>
             </div>
         </div>
